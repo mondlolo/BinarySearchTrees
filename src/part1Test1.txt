@@ -1,0 +1,18 @@
+Dam Name: Inanda Dam 
+FSC: 237.4
+Dam Level: 190.57
+
+
+
+Dam Name: De Hoop Dam 
+FSC: 348.7
+Dam Level: 324.97000000000003
+
+
+
+Dam Name: Douglas Storage Weir  
+FSC: 16.245000000000001
+Dam Level: 17.434000000000001
+
+
+

@@ -10,7 +10,6 @@ public class DamArrayApp{
               DamArrayApp x = new DamArrayApp();
               x.readFile();
 
-
               String userInput = "";
               for(String k : args){
                 userInput+=k;
@@ -34,9 +33,9 @@ public class DamArrayApp{
              count+=1;
              variable = x;
              if(x.contains(damName)){
-               //System.out.println(x);
-               //System.out.printf("There are %s comparisons done.\n",count);
-               System.out.println(count);
+               System.out.println(x);
+               System.out.printf("There are %s comparisons done.\n",count);
+               //System.out.println(count);
                break;
 
              }if(!(variable.contains(damName))&& count==211){
@@ -74,14 +73,12 @@ public class DamArrayApp{
 
                         }else{
                             damInfo[indexVariable]= String.format("Dam Name: %s\nFSC: %s\nDam Level: %s\n\n\n",dataStorage[2],dataStorage[10],dataStorage[27]);
-                            //System.out.println(String.format("Dam Name: %s\nFSC: %s\nDam Level: %s\n\n\n",dataStorage[2],dataStorage[10],dataStorage[27]));
 
                         }
                         indexVariable++;
                    }
                }catch(FileNotFoundException e){
                   System.out.println("An error occured");
-                  //System.out.println(e);
                }
 
         }
@@ -89,7 +86,7 @@ public class DamArrayApp{
         public void openDataFile(){
 
                int indexVariable = -1;
-               String inputFile = "allDamNames.txt";
+               String inputFile = "randomData.txt";
                File file =  new File(inputFile);
 
                try{
@@ -103,7 +100,7 @@ public class DamArrayApp{
 
                    }
                }catch(FileNotFoundException e){
-                  System.out.println("An error occured nix");
+                  System.out.println("An error occured");
                }
 
         }
